@@ -2,7 +2,7 @@ import {
   Path, NewCar, ServerCar, Params, ServerWinner, DriveResponse, RaceResponse,
 } from '../types';
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://net-qx9du58pt-adypr.vercel.app';
 
 export const path: Path = {
   garage: '/garage',
