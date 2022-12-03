@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url("assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+ul {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  padding: 5px 12px;
+
+  font: inherit;
+  color: inherit;
+
+  background: none;
+
+  border-radius: 5px;
+  outline: inherit;
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+
+    transition: 0.2s;
+  }
+
+  &:disabled {
+    background-color: grey;
+    filter: none;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+
+  border: 3px solid purple;
+}
+
+thead {
+  width: 20%;
+  padding-bottom: 5px;
+
+  border-bottom: 2px solid grey;
+}
+
+th {
+  caption-side: bottom;
+  font-style: italic;
+  font-family: "Rock Salt", cursive;
+  color: whitesmoke;
+  letter-spacing: 1px;
+
+  background-color: blue;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(150 182 252);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(108 154 253);
+}
+
+th,
+td {
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+td {
+  padding-top: 3px;
+}
+
+.d-none {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}

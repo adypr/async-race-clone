@@ -1,0 +1,53 @@
+.garage {
+  width: 100%;
+
+  &__control {
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+  }
+
+  &__generate {
+    font-weight: bold;
+    font-size: 18px;
+
+    background-color: rgb(125 166 255);
+    border: none;
+  }
+
+  &__cars {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.new-car {
+  display: flex;
+  padding: 16px 10px 10px 0;
+  gap: 6px;
+
+  &__create {
+    padding-right: 6px;
+    padding-left: 6px;
+
+    font-weight: bold;
+    color: whitesmoke;
+
+    background-color: grey;
+
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: rgb(125 166 255);
+      cursor: pointer;
+
+      transition: 0.2s;
+    }
+  }
+}

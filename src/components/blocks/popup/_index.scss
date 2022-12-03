@@ -1,0 +1,45 @@
+.overlay {
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.popup {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+  min-height: 20%;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  background-color: whitesmoke;
+
+  &__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 20px;
+    height: 20px;
+    padding-top: 1px;
+
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
