@@ -4,7 +4,8 @@
     "description": "",
     "main": "webpack.base.config.js",
     "scripts": {
-        "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
+        "start": "concurrently \"node index.js\" \"webpack serve --open --config ./webpack.config.js --env mode=dev\"",
+        "serve": "node index.js",
         "build": "webpack --config ./webpack.config.js --env mode=prod",
         "lint": "eslint . --ext .ts",
         "deploy": "gh-pages -d ./dist --dest ./async-race"
@@ -20,6 +21,7 @@
     "devDependencies": {
         "@types/node": "^18.0.6",
         "@typescript-eslint/eslint-plugin": "^5.30.4",
+        "concurrently": "^7.6.0",
         "copy-webpack-plugin": "^7.0.0",
         "css-loader": "^5.1.0",
         "eslint": "^7.27.0",
@@ -30,6 +32,7 @@
         "eslint-plugin-prettier": "^3.4.0",
         "html-loader": "^3.1.2",
         "html-webpack-plugin": "^5.2.0",
+        "json-server": "^0.17.1",
         "mini-css-extract-plugin": "^2.6.1",
         "postcss": "^8.4.14",
         "postcss-loader": "^7.0.0",
